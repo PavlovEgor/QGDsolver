@@ -12,6 +12,19 @@ This branch is laid out as an OpenFOAM (openfoam.com) plugin.
 - Custom location:
   `./Allwmake -prefix=user|group|openfoam|/some/path`
 
+## Layout
+
+Same as in OpenFOAM:
+
+| Directory | Contents |
+|-----------|----------|
+| `src/` | libraries (`src/Allwmake` builds them in dependency order) |
+| `applications/solvers/` | solvers |
+| `applications/utilities/` | utilities |
+| `tutorials/` | tutorial cases |
+| `doc/` | documentation |
+| `bin/` | scripts and tools |
+
 If you found these solver/solvers useful or you want to read about implemented numerical algorithms, please cite or refer to
 
 * M. V. Kraposhin, E. V. Smirnova, T. G. Elizarova, and M. A. Istomina, 

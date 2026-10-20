@@ -2,10 +2,8 @@
 cd "${0%/*}" || exit                            # Run from this directory
 #------------------------------------------------------------------------------
 
-for dir in lib/* app/* app/utils/*
-do
-    [ -d "$dir/Make" ] && wclean "$dir"
-done
+wclean -all src
+wclean -all applications
 
 tutorials/Allclean
 
